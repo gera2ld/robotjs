@@ -11,7 +11,7 @@
 	#include <stdbool.h>
 #endif
 #ifdef __cplusplus
-extern "C" 
+extern "C"
 {
 #endif
 #if defined(IS_MACOSX)
@@ -63,7 +63,7 @@ void toggleKeyCode(MMKeyCode code, const bool down, MMKeyFlags flags);
 void tapKeyCode(MMKeyCode code, MMKeyFlags flags);
 
 /* Toggles the key corresponding to the given UTF character up or down. */
-void toggleKey(char c, const bool down, MMKeyFlags flags);
+void toggleKey(unsigned long c, const bool down, MMKeyFlags flags);
 void tapKey(char c, MMKeyFlags flags);
 
 /* Sends a Unicode character without modifiers. */
