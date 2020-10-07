@@ -1,5 +1,5 @@
 {
-  "name": "robotjs",
+  "name": "@gera2ld/robotjs",
   "version": "0.6.0",
   "description": "Node.js Desktop Automation.",
   "main": "index.js",
@@ -12,6 +12,10 @@
     "install": "prebuild-install || node-gyp rebuild",
     "install-debug": "prebuild-install || node-gyp rebuild --debug",
     "prebuild": "prebuild --all"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
